@@ -1,0 +1,16 @@
+.featured-products {
+    padding: 30px 0 80px 0;
+}
+
+.featured-products-row {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-tile {
+    margin: 3% 1% 0% 2%;
+}
+
+.featured-products h2 {
+    margin-bottom: 0; 
+}

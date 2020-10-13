@@ -175,11 +175,22 @@ body {
     color: #0D057F;
     font-weight: bold;
     margin-right: 31px;
-    padding-bottom: 16px;
+    padding-bottom: 15px;
 }
 
 .main-nav a:hover {
     border-bottom: 2px solid #0D057F;
+}
+
+.active {
+    border-bottom: 2px solid #0D057F;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #0D057F;
+    font-weight: bold;
+    margin-right: 31px;
+    padding-bottom: 15px;
 }
 
 /* --------------------------------- header-for-mobile -------------------------- */
