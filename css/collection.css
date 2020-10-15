@@ -3,14 +3,225 @@
 }
 
 .featured-products-row {
-    justify-content: space-around;
+    justify-content: normal;
     flex-wrap: wrap;
 }
 
+.fp-headline {
+    width: 55%;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.sort {
+    display: flex;
+    width: 45%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sort a {
+    font-size: 12px;
+    color: #515151;
+    opacity: 0.6;
+    font-weight: 600;
+    margin-right: 10%;
+}
+
+.sort a::after {
+    content: url(../images/sort-arrow.png);
+    position: absolute;
+    margin-left: 15px;
+}
+
 .product-tile {
-    margin: 3% 1% 0% 2%;
+    margin: 3% 2% 0% 3%;
 }
 
 .featured-products h2 {
     margin-bottom: 0; 
+}
+
+/* ---------------------------- adaptive --------------------------------- */
+
+/* ---------------------------- 1367px ------------------------------------ */
+
+@media screen and (max-width:1367px) {
+    .product-tile {
+        margin: 3% 2% 0% 2%;
+    }
+}
+
+/* ---------------------------- 1025px ------------------------------------ */
+
+@media screen and (max-width:1025px) {
+    .product-tile {
+        margin: 3% 2% 0% 3%;
+    }
+    
+}
+
+/* ---------------------------- 824px ------------------------------------ */
+
+@media screen and (max-width: 824px) {
+    .product-tile {
+        margin: 3% 7% 0% 8%;
+    }
+}
+
+/* ---------------------------- 813px --------------------------------- */
+
+@media screen and (max-width: 813px) {
+    .product-tile {
+        margin: 5% 7% 0% 8%;
+    }
+}
+
+
+/* ---------------------------- 769px ------------------------------------ */
+
+@media screen and (max-width:769px) {
+    .sort a {
+        margin-right: 15%;
+    }
+
+    .product-tile {
+        margin: 3% 6% 0% 7%;
+    }
+}
+
+/* ---------------------------- 737px ------------------------------------ */
+
+@media screen and (max-width:737px) {
+    .product-tile {
+        margin: 3% 6% 0% 5%;
+    }
+    
+}
+
+/* ---------------------------- 721px ------------------------------------ */
+
+@media screen and (max-width:721px) {
+    .main-nav {
+        margin-left: 13%;
+    }
+
+    .fp-headline {
+        width: 60%;
+    }
+
+    .sort {
+        width: 40%;
+    }
+    
+    .product-tile {
+        margin: 3% 5% 0% 5%;
+    }
+}
+
+/* ---------------------------- 668px ------------------------------------ */
+
+@media screen and (max-width:668px) {
+    .product-tile {
+        margin: 3% 4% 0% 3%;
+    }
+}
+
+/* ---------------------------- 654px ------------------------------------ */
+
+@media screen and (max-width:654px) {
+    .main-nav {
+        margin-left: 14%;
+    }
+
+    .product-tile {
+        margin: 3% 3% 0% 3%;
+    }
+}
+
+/* ---------------------------- 641px ------------------------------------ */
+
+@media screen and (max-width:641px) {
+    .product-tile {
+        margin: 3% 2% 0% 3%;
+    }
+}
+
+/* ---------------------------- 569px ------------------------------------ */
+
+@media screen and (max-width:569px) {
+    .sort a {
+        margin-right: 25%;
+    }
+
+    .product-tile {
+        margin: 3% 5% 0% 6%;
+    }
+}
+
+/* ---------------------------- 541px ------------------------------------ */
+
+@media screen and (max-width:541px) {
+    .product-tile {
+        margin: 4% 3% 0% 6%;
+    }    
+}
+
+
+/* ---------------------------- 426px ------------------------------------ */
+
+@media screen and (max-width:426px) {
+    .fp-headline {
+        width: 65%;
+    }
+
+    .sort {
+        width: 35%;
+    }
+
+    .product-tile {
+        margin: 9% 1% 0% 6%;
+    }
+
+}
+
+/* ---------------------------- 415px ------------------------------------ */
+
+@media screen and (max-width:415px) {
+    .product-tile {
+        margin: 9% 0% 0% 5%;
+    }
+}
+
+
+/* ---------------------------- 376px ------------------------------------ */
+
+@media screen and (max-width:376px)  {
+    .product-tile {
+        margin: 9% 6% 0% 6%;
+    }
+}
+
+/* ---------------------------- 361px ------------------------------------ */
+
+@media screen and (max-width:361px) {
+    .product-tile {
+        margin: 9% 5% 0% 6%;
+    }
+}
+
+/* ---------------------------- 321px ------------------------------------ */
+
+@media screen and (max-width:321px) {
+    .fp-headline {
+        width: 50%;
+    }
+
+    .sort {
+        width: 47%;
+    }
+    
+    .product-tile {
+        margin: 9% 2% 0% 4%;
+    }
 }
