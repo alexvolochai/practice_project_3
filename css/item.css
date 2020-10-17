@@ -38,6 +38,10 @@
     font-weight: 600;
 }
 
+.slider-dot {
+    display: none;
+}
+
 .subhead-2 {
     display: flex;
     justify-content: space-between;
@@ -157,6 +161,10 @@
     top: 5px;
     right: 5px;
     transform: translateZ(-1px);
+}
+
+.free-delivery {
+    display: none;
 }
 
 .product-description p {
@@ -342,4 +350,645 @@
     top: 4px;
     right: 3px;
     transform: translateZ(-1px);
+}
+
+/* ---------------------------------- upsell-items ------------------------- */
+
+.upsell-items {
+    padding-bottom: 90px;
+}
+
+.upsell-items-row {
+    display: flex;
+    justify-content: center;
+}
+
+.main-upsell-items {
+    width: 91%;
+    display: flex;
+    flex-direction: column;
+    border: 4px solid #729BD9;
+    padding: 80px 0 60px 0;
+    transform-style: preserve-3d;
+}
+
+.usell-item-headline {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.usell-item-headline h3 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #0D057F
+}
+
+.featured-products-row {
+    justify-content: space-around;
+    display: flex;
+}
+
+.product-tile {
+    margin: 0% 0% 0% 0%;
+    height: 334px;
+}
+
+.item-img img {
+    width: 260px;
+}
+
+.item-p {
+    padding: 14px 0 0 0;
+    background-color: #F8F7FBFF;
+}
+
+.main-upsell-items::after {
+    content: '';
+    width: 1318px;
+    height: 571px;
+    background-color: #F8F7FBFF;
+    position: absolute;
+    display: block;
+    top: 15px;
+    right: 15px;
+    transform: translateZ(-1px);
+}
+
+/* --------------------------------- adaptive -------------------------------- */
+
+/* ---------------------------- 1367px ------------------------------------ */
+
+@media screen and (max-width:1367px) {
+    .main-upsell-items::after {
+        content: '';
+        width: 1253px;
+    }
+}
+
+/* ---------------------------- 1025px ------------------------------------ */
+
+@media screen and (max-width:1025px) {
+    .img-max img {
+        width: 430px;
+    }
+    
+    .info-side {
+        width: 47%;
+    }
+
+    .item-img img {
+        width: 181px;
+    }
+
+    .product-tile {
+        height: 243px;
+    }
+
+    .main-upsell-items::after {
+        display: none;
+    }
+
+    .main-upsell-items {
+        background-color: #F8F7FBFF;
+    }
+}
+
+/* ---------------------------- 824px ------------------------------------ */
+
+@media screen and (max-width: 824px) {
+    .img-max img {
+        width: 330px;
+    }
+
+    .button-add-product a {
+        width: 220px;
+    }
+
+    .button-add-product a::after {
+        width: 225px;
+    }
+
+    .start-side img {
+        width: 85px;
+    }
+
+    .btn-add a {
+        width: 50px;
+    }
+
+    .btn-add a::after {
+        width: 54px;
+    }
+
+    .m-s-headline p {
+        font-weight: 600;
+        font-size: 10px;
+    }
+
+    .selectores p {
+        font-size: 9px;
+        line-height: 12px;
+        margin-left: 2px;
+    }
+
+    .slct-1 {
+        width: 117px;
+    }
+
+    .medium-side {
+        width: 54%;
+    }
+
+    .slct-1 p::after {
+        left: 17px;
+    }
+
+    .slct-2 p::after {
+        left: 36px;
+    }
+
+    .benefits::after {
+        left: 70%;
+    }
+
+    .ingredients::after {
+        left: 63%;
+    }
+
+    .f-b-results::after {
+        left: 52%;
+    }  
+    
+    .item-img img {
+        width: 150px;
+    }
+
+    .item-img {
+        width: 150px;
+    }
+
+    .start-block {
+        width: 150px;
+    }
+
+    .name-product {
+        font-size: 11px;
+    }
+
+    .product-tile {
+        height: 205px;
+    }
+
+    .main-upsell-items {
+        padding: 50px 0 50px 0;
+    }
+}
+
+/* ---------------------------- 813px --------------------------------- */
+
+@media screen and (max-width: 813px) {
+
+}
+
+
+/* ---------------------------- 769px ------------------------------------ */
+
+@media screen and (max-width:769px) {
+    .img-max img {
+        width: 280px;
+    }
+    
+    .button-add-product a {
+        width: 175px;
+    }
+
+    .button-add-product a::after {
+        width: 181px;
+    }
+
+    .ingredients::after {
+        left: 62%;
+    }
+
+    .f-b-results::after {
+        left: 50%;
+    }
+}
+
+/* ---------------------------- 737px ------------------------------------ */
+
+@media screen and (max-width:737px) {
+    .img-max img {
+        width: 265px;
+    }   
+}
+
+/* ---------------------------- 721px ------------------------------------ */
+
+@media screen and (max-width:721px) {
+    .img-max img {
+        width: 200px;
+    }
+    
+    .btn-add a::after {
+        width: 50px;
+    }
+    
+    .item-img img {
+        width: 130px;
+    }
+
+    .item-img {
+        width: 130px;
+    }
+
+    .start-block {
+        width: 130px;
+    }
+
+    .product-tile {
+        height: 195px;
+    }
+}
+
+/* ---------------------------- 668px ------------------------------------ */
+
+@media screen and (max-width:668px) {
+    .button-add-product a {
+        width: 150px;
+    }
+
+    .button-add-product a::after {
+        width: 155px;
+    }
+
+    .benefits::after {
+        left: 63%;
+    }
+
+    .ingredients::after {
+        left: 54%;
+    }
+    
+    .f-b-results::after {
+        left: 41%;
+    }
+
+    .product-description p {
+        font-size: 15px;
+    }
+
+    .slct-1 p::after {
+        left: 6px;
+    }
+
+    .slct-2 p::after {
+        left: 21px;
+    }
+
+    .btn-add a::after {
+        width: 47px;
+    }
+}
+
+/* ---------------------------- 654px ------------------------------------ */
+
+@media screen and (max-width:654px) {
+    .img-max img {
+        width: 220px;
+    }
+}
+
+/* ---------------------------- 641px ------------------------------------ */
+
+@media screen and (max-width:641px) {
+    .f-b-results::after {
+        left: 40%;
+    }
+
+    .btn-add a::after {
+        width: 44px;
+    }
+}
+
+/* ---------------------------- 569px ------------------------------------ */
+
+@media screen and (max-width:569px) {
+    .min-item-img {
+        display: none;
+    }
+
+    .main-part-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 0 0px 0;
+    }
+
+    .img-max {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-max img {
+        width: 85%;
+    }
+
+    #img-max-2, #img-max-3, #img-max-4 {
+        display: none;
+    }
+
+    .info-side {
+        width: 85%;
+    }
+
+    .subhead {
+        display: none;
+    }
+
+    .slider-dot {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 25px;
+    }
+
+    .slider-dot img {
+        padding: 0 5px;
+    }
+
+    .subhead-2 br {
+        display: none;
+    }
+
+    .more-price-info {
+        margin-bottom: 32px;
+        width: 50%;
+        margin-top: -7px;
+    }
+
+    .price-strike {
+        justify-content: space-between;
+        height: 50px;
+    }
+
+    .quantity-and-button {
+        flex-direction: column;
+        margin-bottom: 27px;
+    }
+
+    .button-add-product {
+        align-self: center;
+    }
+
+    .button-add-product a {
+        width: 430px;
+    }
+
+    .button-add-product a::after {
+        width: 435px;
+    }
+
+    .quantity {
+        margin-bottom: 20px;
+    }
+
+    .free-delivery {
+        display: flex;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+
+    .free-delivery a {
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #0D057F;
+    }
+
+    .free-delivery a::before {
+        content: url(../images/delivery.png);
+        position: relative;
+        top: 2px;
+        right: 7px;
+    }
+
+    .benefits::after {
+        left: 77%;
+    }
+
+    .ingredients::after {
+        left: 71%;
+    }
+
+    .f-b-results::after {
+        left: 62%;
+    }
+
+    .pairing {
+        padding-top: 80px;
+    }
+
+    .m-s-headline p {
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .start-side img {
+        width: 95px;
+    }
+
+    .price-strike {
+        height: 35px;
+    }
+
+    .end-side {
+        align-items: flex-end;
+    }
+
+    .btn-add a::after {
+        width: 54px;
+        right: 3px;
+        top: 3px;
+    }
+
+    .reviews-row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .reviews-row .start-block {
+        margin: 0% 0px 6% 0%;
+        font-size: 25px;
+        transform: none;
+    }
+
+    .reviews-row .standard-block {
+        width: 37%;
+        margin-left: 0;
+    }
+
+    .standard-block .reviews-p1, .reviewers-name {
+        font-size: 12px;
+        line-height: 23px;
+    }
+
+    #standard-block-2, #standard-block-3{
+        display: none;
+    }
+
+    .standard-block-1::before {
+        content: url(../images/reviews-arrow-left.svg);
+        position: absolute;
+        left: 20%;
+    }
+
+    .standard-block-1::after {
+        content: url(../images/reviews-arrow-right.svg);
+        position: absolute;
+        right: 20%;
+    }
+
+    .reviews-row .start-block {
+        text-align: center;
+    }
+
+    .start-block {
+        width: 180px;
+    }
+
+    .item-img img {
+        width: 180px;
+    }
+
+    .product-tile {
+        margin-bottom: 85px;
+    }
+
+    .main-upsell-items {
+        padding: 50px 0 0px 0;
+    }
+}
+
+/* ---------------------------- 541px ------------------------------------ */
+
+@media screen and (max-width:541px) {
+   
+}
+
+
+/* ---------------------------- 426px ------------------------------------ */
+
+@media screen and (max-width:426px) {
+    .button-add-product a {
+        width: 320px;
+    }
+
+    .button-add-product a::after {
+        width: 325px;
+    }
+
+    .benefits::after {
+        left: 71%;
+    }
+
+    .ingredients::after {
+        left: 63%;
+    }
+
+    .f-b-results::after {
+        left: 51%;
+    }
+
+    .btn-add a::after {
+        width: 52px;
+    }
+
+    .start-block {
+        width: 150px;
+    }
+
+    .item-img img {
+        width: 150px;
+    }
+}
+
+/* ---------------------------- 415px ------------------------------------ */
+
+@media screen and (max-width:415px) {
+
+}
+
+
+/* ---------------------------- 376px ------------------------------------ */
+
+@media screen and (max-width:376px)  {
+    .more-price-info {
+        width: 76%;
+    }
+
+    .button-add-product a {
+        width: 285px;
+    }
+
+    .button-add-product a::after {
+        width: 290px;
+    }
+
+    .benefits::after {
+        left: 67%;
+    }
+
+    .ingredients::after {
+        left: 58%;
+    }
+
+    .f-b-results::after {
+        left: 45%;
+    }
+
+    .m-s-headline p {
+        font-size: 12px;
+    }
+
+    .start-side img {
+        width: 73px;
+    } 
+}
+
+/* ---------------------------- 361px ------------------------------------ */
+
+@media screen and (max-width:361px) {
+
+}
+
+/* ---------------------------- 321px ------------------------------------ */
+
+@media screen and (max-width:321px) {
+    .benefits::after {
+        left: 61%;
+    }
+
+    .ingredients::after {
+        left: 51%;
+    }
+
+    .f-b-results::after {
+        left: 35%;
+    }
+
+    .btn-add a {
+        width: 42px;
+        padding: 7px 0px 3px 0px;
+    }
+
+    .btn-add a::after {
+        width: 44px;
+        height: 32px;
+    }
+
+    .selectores p {
+        font-size: 7px;
+    }
 }
